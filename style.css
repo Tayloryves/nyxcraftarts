@@ -1,0 +1,349 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital@0;1&display=swap');
+
+* {
+    margin: 0;
+}
+body {
+    background-image: url("magpies-nest.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    font-family: "Arimo", sans-serif;
+    color: white;
+    text-shadow: 0 0 3px rgb(185, 202, 255);
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: "didot", Serif;
+    text-shadow: 0 0 11px rgb(226, 233, 255);
+    text-align: center;
+}
+h1 {
+    position: relative;
+    font-size: 56pt;
+    margin-top:3%;
+}
+h2 {
+    font-size: 46pt;
+    text-align: left;
+}
+p {
+    display: block;
+    font-size:16pt;
+    line-height: 155%;
+    margin-bottom: 3%;
+}
+nav {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    background-color: rgba(0,0,0,.33);
+    backdrop-filter: blur(3px);
+    border-bottom: 1px solid rgb(20, 20, 20);
+    z-index: 10;
+    top: 0%;
+    width: 100%;
+}
+nav ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    justify-content: space-evenly;
+}
+nav ul li{
+    padding: 20px;
+}
+nav ul li a:link {
+    color: white;
+    text-decoration: none;
+    text-shadow: 0 0 11px rgb(185, 202, 255);
+}
+nav ul li  a:visited {
+    color: rgba(255, 255, 255, .5);
+    text-shadow: 0 0 5px rgb(185, 202, 255);
+}
+nav ul li a:hover {
+    text-shadow: 0 0 22px #fff;
+}
+nav ul li a:active {
+    color: #fff;
+    text-shadow: 0 0 16px rgb(126, 236, 255);
+}
+a {
+    color: white;
+    text-decoration: none;
+}
+#caseStudyCircle1 {
+    background-image: url("/CALLANISH\ SITE/callanish-circle-gordon-williams.jpg");
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-size: contain;
+    border-radius: 50%;
+    border: 1PX SOLID WHITE;
+    height: 200px;
+    width: 200px;
+    align-self: center;
+    margin: 3vh auto 3vh auto;
+    box-shadow: 0 0 11px white, 0 0 7px white inset;
+}
+.heroHeading1, .heroHeading2 {
+    display: block;
+    position: relative;
+    margin: 1vh auto 1vh auto;
+    font-size: 88pt;
+}
+.heroHeading2 {
+    margin-top: 25vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.heroImg1 {
+    background-image: url("CALLANISH SITE/henry-dick-2LALNs1C0No-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display:inline-block;
+    background-color:rgb(23, 24, 26);
+    height: 70vh;
+    width: 100vw;
+    border-bottom: 1px solid rgb(61, 65, 75);
+}
+
+.underHeading {
+    position: relative;
+    width: 55%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1%;
+    font-size:33pt;
+}
+
+.page {
+    display: block;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    border: 1px solid magenta;
+}
+
+.panel {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+    margin-bottom: 25vh;
+    height: auto;
+    width: 100vw;
+    background-color:rgba(0, 0, 0, 0.66);
+    backdrop-filter: blur(22px);
+    border-top: solid 1px rgb(61, 65, 75);
+    border-bottom:solid 2px rgb(24, 33, 33);
+}
+.panel p {
+    font-size: 18pt;
+    text-shadow: 0 0 3px gray;
+    margin: 3vh 3vw 3vh 3vw;
+}
+
+.panel2 {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 3vh;
+    justify-content: center;
+    justify-items: center;
+    align-content: space-around;
+    align-items: center;
+    margin-bottom: 25vh;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    height: auto;
+    width: 100vw;
+    background-color:rgba(0, 0, 0, 0.66);
+    backdrop-filter: blur(22px);
+    border-top: solid 1px rgb(30, 41, 61);
+    border-bottom: solid 2px rgb(24, 33, 33);
+}
+
+.p2-gitem0 {
+    grid-column: 1/3;
+    grid-row: 1/2;
+    align-self: start;
+    justify-self: stretch;
+}
+
+.p2-gitem1 {
+    border: 1px solid green;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    justify-self: stretch;
+    align-self: center;
+    text-align:center;
+}
+
+.p2-gitem1 p {
+    text-align: left;
+    font-size: 18pt;
+}
+
+.p2-gitem2{
+    border: 1px solid red;
+    grid-column: 2/3;
+}
+
+.p2-gitem3 {
+    border: 1px solid blue;
+    grid-row: 2/3;
+    grid-column: 1/2;
+}
+
+.uxGrid {
+    margin-top: 15vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    grid-gap: 3%;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.uxGridItem1 {
+    grid-column: 1/2;
+}
+
+.uxGridItem2 {
+    grid-column: 2/3;
+    text-align: center;
+}
+
+.uxGridItem3 {
+    grid-column: 3/4;
+}
+
+/*
+.item-1, .item-2, .item-3{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: space-around;
+    justify-content: center;
+    margin: 3%;
+    height: 70vh;
+}
+.item-1{
+    flex: 1;
+}
+.item-2 {
+    flex: 1;
+}
+.item-1 h2, h3 {
+    text-align: left;
+    margin-bottom: 10%;
+}
+.item-1 h3 {
+    font-size: 26pt;
+    line-height: 155%;
+    text-align: left;
+}
+/*
+    padding: 10vh 1vw 20vh 1vw;
+}
+*/
+
+
+.gitem1{
+    border: 1px solid red;
+    padding: 2%;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    justify-self: center;
+}
+
+.gitem2 {
+    border: 1px solid blue;
+    padding: 2%;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    justify-self: center;
+}
+
+.gitem3 {
+    border: 1px solid green;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    justify-self: stretch;
+}
+
+.gitem4 {
+    border: 1px solid yellow;
+    grid-row-start: 1;
+    grid-row-end: 4;
+}
+
+.buttonContainer{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    border: 1px solid purple;
+}
+.button a:link{
+    border-radius: 33px;
+    border: 1px solid white;
+    box-shadow: 0 0 11px rgb(226, 233, 255), 0 0 11px rgb(185, 202, 255) inset;
+    padding: 18px;
+    text-decoration: none;
+    color:rgb(226, 233, 255);
+}
+
+.callToAction a:link{
+    color:rgba(0, 0, 0, 0.77);
+    background-color:rgb(226, 233, 255);
+}
+.toolTip{
+    position:relative;
+    margin-top: 5vh;
+}
+
+#portrait1 {
+    flex: 1;
+    height: 50vh;
+    overflow: hidden;
+}
+#portrait1 img{
+    height: 800px;
+}
+#logoCircle {
+    display: block;
+    margin: 16vh auto 0 auto;
+    height: 500px;
+    width: 500px;
+    border-radius: 50%;
+    border: 7px solid white;
+    box-shadow: 0 0 16px 1px rgb(226, 233, 255), 0 0 16px 1px rgb(226, 233, 255) inset;
+    background-image: url("RIGHTSIGILLUMULTIMA.png");
+    background-position: center;
+    background-size: cover;
+    background-position-x: 10px;
+    background-position-y: -5px;
+
+}

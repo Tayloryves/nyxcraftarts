@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            * {
+                margin:0;
+            }
+            html{
+                background-color: #444;
+                background-image: url("https://images.pexels.com/photos/4827/nature-forest-trees-fog.jpeg?cs=srgb&dl=pexels-jaymantri-4827.jpg&fm=jpg");
+                font-family: arial;
+                font-size: 14pt;
+                color: #333;
+            }
+            h1 {
+                font-size: 50pt;
+                text-align: center;
+                margin-top: 5vh;
+            }
+            #formStyle {
+                display: flex;
+                flex-direction: column;
+                margin-top: 15vh;
+                -webkit-backdrop-filter: blur(2px);
+                backdrop-filter: blur(10px);
+                background-color: rgba(77,77,77,0.33);
+                border: 1px solid #777;
+                width: 50%;
+                margin-left: auto;
+                margin-right: auto;
+                border-radius: 22px;
+                text-align: center;
+                align-content: center;
+            }
+            form label {
+                display: block;
+                text-align: center;
+                margin-top: 2%;
+                margin-bottom: 2%;
+                font-size: 20pt;
+                color: #fff;
+            }
+            form input[type=text] {
+                text-align: center;
+                width: 30%;
+                border-radius: 5px;
+            }
+            form textarea {
+                width: 50%;
+                height: 90%;
+                font-size: 15pt;
+                text-align: center;
+                border-radius: 7px;
+            }
+            form button {
+                display: block;
+                margin: 20px auto 20px auto;
+            }
+        </style>
+    </head>
+    <body>
+        <section> 
+                <h1>Contact</h1>
+                <hr>
+                <div id="formStyle">
+                <p>
+                    <form action="https://formspree.io/taylorynyx@gmail.com"
+                    method="post">
+                        <label for="nameInput">Your Name:</label>
+                        <input id="nameInput" type="text" name="name" required maxlength="30">
+                        <label for="emailInput">Your Email Address:</label>
+                        <input id="emailInput" type="text" name="emailInput" required maxlength="30">
+                        <label for= "message">Your Message</label>
+                        <textarea id="message" type="text" name="message" required maxlength="250" placeholder="250 character max"></textarea>
+                        <button type="submit">Submit</button>
+                    </form>
+                </p>
+            </div>
+        </section>
+    </body>
+</html>
