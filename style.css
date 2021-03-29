@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Arimo:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap');
 
 * {
     margin: 0;
 }
 body {
-    background-color: #030308;
-    background-image: url("magpies-nest.jpg");
+    background-color: #292929;/*
+    background-image: url("magpies-nest.jpg");*/
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
@@ -23,11 +24,11 @@ h1, h2, h3, h4, h5, h6{
 }
 h1 {
     position: relative;
-    font-size: 77pt;
-    margin-top:3%;
+    font-size: 5vw;
+    margin-top:3vw;
 }
 h2 {
-    font-size: 52pt;
+    font-size: 4.5vw;
 }
 
 hr {
@@ -39,31 +40,34 @@ hr {
 
 p {
     display: block;
-    font-size:16pt;
+    font-size: 13pt;
     line-height: 155%;
-    margin-bottom: 3%;
+    margin-bottom: 1%;
 }
 nav {
     position: fixed;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: space-evenly;
+    justify-content: space-between;
     background-color: rgba(0,0,0,.33);
     backdrop-filter: blur(3px);
     border-bottom: 1px solid rgb(20, 20, 20);
     z-index: 10;
     top: 0%;
     width: 100%;
+    font-size: 18pt;
 }
 nav ul {
     display: flex;
     flex-direction: row;
     list-style-type: none;
-    justify-content: space-evenly;
+    justify-content: center;
+    justify-items: center;
+    margin-right: 3%;
 }
 nav ul li{
-    padding: 20px;
+    padding: 1em;
 }
 nav ul li a:link {
     color: white;
@@ -86,8 +90,51 @@ a {
     text-decoration: none;
 }
 
+footer {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    background-color: rgba(0,0,0,.33);
+    backdrop-filter: blur(3px);
+    border-top: 1px solid rgb(20, 20, 20);
+    z-index: 10;
+    top: 90%;
+    width: 100%;
+    font-size: 16pt;
+}
+footer ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    justify-content: center;
+    justify-items: center;
+    margin-right: 3%;
+}
+
+footer ul li{
+    padding: 1em;
+}
+footer ul li a:link {
+    color: white;
+    text-decoration: none;
+    text-shadow: 0 0 11px rgb(185, 202, 255);
+}
+footer ul li  a:visited {
+    color: rgba(255, 255, 255, .5);
+    text-shadow: 0 0 5px rgb(185, 202, 255);
+}
+footer ul li a:hover {
+    text-shadow: 0 0 22px #fff;
+}
+footer ul li a:active {
+    color: #fff;
+    text-shadow: 0 0 16px rgb(126, 236, 255);
+}
+
 #caseStudyCircle1 {
-    background-image: url("/CALLANISH\ SITE/callanish-circle-gordon-williams.jpg");
+    background-image: url("../CALLANISH\ SITE/callanish-circle-gordon-williams.jpg");
     background-repeat: no-repeat;
     background-position-x: center;
     background-size: cover;
@@ -98,6 +145,7 @@ a {
     align-self: center;
     margin: 3vh auto 3vh auto;
     box-shadow: 0 0 11px white, 0 0 7px white inset;
+    overflow: hidden;
 }
 
 .csCircle {
@@ -121,19 +169,6 @@ a {
     min-height: 100%;
 }
 
-.caseStudyDoubleContainer {
-    grid-column: 4/10;
-    display: grid;
-    grid-gap: 3%;
-    grid-template-columns: repeat(12, 1fr);
-    justify-content: center;
-    justify-items: space-between;
-    align-items: stretch;
-    align-content: stretch;
-    min-height: 60vh;
-    margin-bottom: 20vh;
-}
-
 .caseStudyContainer ul {
     grid-column: 1 / 13;
     justify-self: start;
@@ -141,8 +176,31 @@ a {
     list-style-type: none;
 }
 
+.caseStudyContainer li {
+    line-height: 125%;
+}
 
-.caseStudyDoubleContainer ul li{
+.caseStudyContainer2 {
+    grid-column: 3/11;
+    display: grid;
+    grid-gap: 3%;
+    grid-template-columns: repeat(12, 1fr);
+    justify-content: center;
+    justify-items: space-between;
+    align-items: center;
+    align-content: start;
+    min-height: 60vh;
+    margin-bottom: 10vh;
+}
+
+.caseStudyContainer2 p {
+    font-size: 20pt;
+    line-height: 150%;
+    padding-top: 0;
+    padding-bottom: 1.5%;
+}
+
+.caseStudyContainer2 ul li{
     grid-column: 1 / 13;
     justify-self: start;
     align-self: center;
@@ -150,9 +208,6 @@ a {
     font-size: 25pt;
 }
 
-.caseStudyContainer li {
-    line-height: 125%;
-}
 
 .caseStudyContainer hr {
     grid-column: 1 / 13;
@@ -163,8 +218,8 @@ a {
 
 .caseStudyContainer p {
     grid-column: 4 / 10;
-    font-size: 22pt;
-    align-items: center;
+    font-size: 1.6vw;
+    align-self: start;
 }
 
 
@@ -183,11 +238,9 @@ a {
     background-repeat: no-repeat;
     background-position-x: center;
     background-size: cover;
-    background-image: linear-gradient(to bottom right, rgba(255, 255, 255,.7), rgba(0,0,0,.3));
-    backdrop-filter: blur(22px);
     border-top: 1px solid rgb(111, 111, 111);
     border-bottom: 1px solid rgb(34, 34, 34);
-    box-shadow: 0 13px 22px rgba(0,0,0,0.77);
+    box-shadow: 0 11px 22px rgba(0,0,0,.7);
     padding-top: 2%;
     padding-bottom: 2%;
     margin-bottom: 7vh;
@@ -213,13 +266,8 @@ a {
     margin-top: 16%;
 }
 
-.caseStudyDoubleContainer p {
-    font-size: 20pt;
-    line-height: 150%;
-}
-
 .csd1 {
-    grid-column: 1 / 7;
+    grid-column: 1 /4;
     background-image: url("CALLANISH SITE/THANK\ YOU\ N.png");
     background-position: center;
     background-size: cover;
@@ -228,24 +276,27 @@ a {
     border: 1px solid #FFF;
     box-sizing: border-box ;
     align-self: stretch;
+    height: 50vh;
 }
 
 .csd2 {
-    grid-column: 7 / 13;
+    grid-column: 4 / 13;
     grid-row: 1 / 2;
 }
 
 .csd3 {
-    grid-column: 1 / 13;
+    grid-column: 4 / 13;
     grid-row: 2 / 3;
 }
 
 .csd4{
     grid-column: 1 /6;
+    align-self: start;
 }
 
 .csd5 {
     grid-column: 8/13;
+    align-self: start;
 }
 
 .csd6 {
@@ -459,10 +510,10 @@ a {
     align-content: space-between;
     align-items: center;
     margin-bottom: 11%;
-    font-size: 22pt;
+    font-size: 1.5vw;
 }
 
-.tripletBox ul{
+.tripletBox ul {
     flex: 1;
     align-self: flex-start;
     justify-self: left;
@@ -499,18 +550,19 @@ a {
 
 .heroHeading1 {
     margin-top: 34vh;
-    font-size: 99pt;
+    font-size: 7vw;
 }
 
 .heroHeading2 {
     margin: 11% auto 7% auto;
     text-align: center;
+    font-size: 4vw;
 }
 .heroHeading3 {
     margin: 1% auto 2% auto;
     text-align: left;
-    font-size: 43pt;
-    max-width: 70%;
+    font-size: 3vw;
+    max-width:66%;
 }
 
 .heroHeading4 {
@@ -596,7 +648,7 @@ a {
 }
 
 .imgOver1 {
-    grid-column: 5/9;
+    grid-column: 5 / 9;
     grid-row: 1;
     background-image: url("/CALLANISH SITE/MOBILE SITE LANDING NOW.jpg");
     background-position: center;
@@ -607,11 +659,11 @@ a {
     border: 1px solid #FFF;
     box-sizing: border-box ;
     align-self: center;
-    height: 56vh;
+    height:66vh;
     margin-top: 7%;
 }
 .imgOver2 {
-    grid-column: 1/5;
+    grid-column: 2/5;
     background-image: url("/CALLANISH SITE/THANK\ YOU\ C.png");
     background-position: center;
     background-size: 128%;
@@ -626,7 +678,7 @@ a {
     margin-top: 7%;
 }
 .imgOver3 {
-    grid-column: 9/13;
+    grid-column: 9/12;
     background-image: url("/CALLANISH SITE/WHAT\ WE\ DO.png");
     background-position: center;
     background-size: 128%;
@@ -643,18 +695,20 @@ a {
 }
 
 .insight {
-    margin: 1% auto 11% auto;
+    margin: 1% auto 7% auto;
     text-align: left;
-    font-size: 34pt;
-    max-width: 70%;
+    max-width: 66%;
+    font-size: 2vw;
 }
 
 .points{
-    margin: 7% auto 5% auto;
-    text-align: left;
-    font-size: 25pt;
-    max-width: 45%;
-    justify-self: left;
+    position: relative;
+    margin: 7% auto 7% auto;
+    text-align: left !important;
+    font-size: 2vw;
+    max-width: 66%;
+    justify-self: start;
+    align-self: start;
 }
 
 .leftHeader {
@@ -664,12 +718,38 @@ a {
     font-size: 30;
 }
 
-
-.longSeparator {
-    margin-top: 22%;
+.logoType {
+    justify-self: flex-start;
+    align-self: center;
+    text-align: left;
+    font-family: 'Cinzel Decorative', cursive;
+    font-size: 20pt;
+    margin-left: 3%;
 }
 
-.sketchContainer{
+.logoType a:link {
+    color: white;
+    text-decoration: none;
+    text-shadow: 0 0 11px rgb(185, 202, 255);
+}
+.logoType  a:visited {
+    color: rgba(255, 255, 255, .5);
+    text-shadow: 0 0 5px rgb(185, 202, 255);
+}
+.logoType a:hover {
+    text-shadow: 0 0 22px #fff;
+}
+.logoType a:active {
+    color: #fff;
+    text-shadow: 0 0 16px rgb(126, 236, 255);
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.sketchContainer {
     grid-column: 1 / 13;
     justify-self: center;
     display: grid;
@@ -760,7 +840,7 @@ a {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-    font-size:33pt;
+    font-size: 3vw;
 }
 .underHeading2 {
     position: relative;
@@ -768,7 +848,7 @@ a {
     grid-column: 7 / 12;
     margin-top: 15%;
     margin-bottom: 60%;
-    font-size:25pt;
+    font-size: 2vw;
 }
 
 .underHeading3 {
@@ -777,14 +857,14 @@ a {
     grid-column: 1 / 7;
     margin-top: 15%;
     margin-bottom: 33%;
-    font-size:33pt;
+    font-size: 2vw;
 }
 
 
 .underHeading4 h2, h3, h4{
     position: relative;
     text-align: left;
-    font-size:30pt;
+    font-size: 2vw;
 }
 
 .mobileWireFrame1{
@@ -797,11 +877,12 @@ a {
     border-radius: 25px;
     border: 1px solid #FFF;
     align-self: stretch;
+    min-height: 66vh;
 }
 
 .mobileWireFrame2{
     grid-column: 5/9;
-    background-image: url("/CALLANISH SITE/WHAT\ WE\ DO\ LO\ FI.png");
+    background-image: url("/CALLANISH SITE/WHAT WE DO LO FI.png");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -813,7 +894,7 @@ a {
 
 .mobileWireFrame3{
     grid-column: 9/13;
-    background-image: url("/CALLANISH SITE/WHAT\ WE\ DO.png");
+    background-image: url("/CALLANISH SITE/WHAT WE DO.png");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -825,7 +906,7 @@ a {
 
 .wireFramesIMG {
     display: block;
-    grid-column: 4 / 10;
+    grid-column: 3 / 11;
     background-image: url("/CALLANISH SITE/wireframes-horizontal.png");
     background-position: top;
     background-size: 110%;
@@ -834,7 +915,7 @@ a {
     border-radius: 25px;
     border: 1px solid #FFF;
     align-self: stretch;
-    min-height: 45vh;
+    min-height: 60vh;
     margin-bottom: 22%;
 }
 
