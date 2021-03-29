@@ -40,7 +40,7 @@ hr {
 
 p {
     display: block;
-    font-size: 13pt;
+    font-size: 1.6rem;
     line-height: 155%;
     margin-bottom: 1%;
 }
@@ -180,35 +180,6 @@ footer ul li a:active {
     line-height: 125%;
 }
 
-.caseStudyContainer2 {
-    grid-column: 3/11;
-    display: grid;
-    grid-gap: 3%;
-    grid-template-columns: repeat(12, 1fr);
-    justify-content: center;
-    justify-items: space-between;
-    align-items: center;
-    align-content: start;
-    min-height: 60vh;
-    margin-bottom: 10vh;
-}
-
-.caseStudyContainer2 p {
-    font-size: 20pt;
-    line-height: 150%;
-    padding-top: 0;
-    padding-bottom: 1.5%;
-}
-
-.caseStudyContainer2 ul li{
-    grid-column: 1 / 13;
-    justify-self: start;
-    align-self: center;
-    list-style-type: none;
-    font-size: 25pt;
-}
-
-
 .caseStudyContainer hr {
     grid-column: 1 / 13;
     width: 100%;
@@ -217,8 +188,8 @@ footer ul li a:active {
 }
 
 .caseStudyContainer p {
-    grid-column: 4 / 10;
-    font-size: 1.6vw;
+    grid-column: 3 / 11;
+    font-size: 1rem;
     align-self: start;
 }
 
@@ -228,12 +199,43 @@ footer ul li a:active {
     align-items: center;
 }
 
+.caseStudyContainer2 {
+    grid-column: 3/11;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    justify-content: center;
+    justify-items: space-between;
+    align-items: center;
+    align-content: start;
+    min-height: 60vh;
+    margin-bottom: 3vh;
+}
+
+.caseStudyContainer2 p {
+    font-size: 1rem;
+    line-height: 150%;
+    padding-top: 0;
+    padding-bottom: 1.5%;
+}
+
+.caseStudyContainer2 ul li{
+    grid-column: 1 / 13;
+    justify-self: start;
+    align-self: start;
+    list-style-type: none;
+    list-style-position: inside;
+    padding-left: 0;
+    margin-left: 0;
+    font-size: 1rem;
+}
+
+
 .caseStudyHeading1 {
     grid-column: 1 / 13;
     text-align: center;
-    font-size: 66pt;
+    font-size: 5rem;
     text-transform:uppercase;
-    background-image: url("CALLANISH SITE/CALLANISH-CIRCLE-gordon-williams.jpg");
+    background-image: url("CALLANISH-SITE/CALLANISH-CIRCLE-gordon-williams.jpg");
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position-x: center;
@@ -254,7 +256,7 @@ footer ul li a:active {
 .caseStudyHeading2 {
     grid-column: 1 /13;
     text-align: center;
-    font-size: 52pt;
+    font-size: 3rem;
     background-image: linear-gradient(to bottom right, rgba(77,77,77,.52), rgba(0,0,0,.3));
     backdrop-filter: blur(22px);
     border-top: 1px solid rgb(77, 77, 77);
@@ -268,15 +270,17 @@ footer ul li a:active {
 
 .csd1 {
     grid-column: 1 /4;
-    background-image: url("CALLANISH SITE/THANK\ YOU\ N.png");
+    background-image: url("CALLANISH-SITE/THANK\ YOU\ N.png");
     background-position: center;
     background-size: cover;
+    background-repeat: no-repeat;
     box-shadow: 0 0 7px #FFF;
     border-radius: 25px;
     border: 1px solid #FFF;
     box-sizing: border-box ;
     align-self: stretch;
-    height: 50vh;
+    min-height: 40vh;
+    min-width: 30vw;
 }
 
 .csd2 {
@@ -336,22 +340,22 @@ footer ul li a:active {
 
 .fullSpan1 {
     display: block;
-    grid-column: 4 / 10;
-    background-image: url("CALLANISH SITE/callanish-group-photo.jpg");
+    grid-column: 3 / 11;
+    background-image: url("CALLANISH-SITE/callanish-group-photo.jpg");
     background-position: center;
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
     box-shadow: 0 0 7px #FFF;
     border-radius: 25px;
     border: 1px solid #FFF;
     align-self: stretch;
-    min-height: 50vh;
+    min-height: 29vh;
     margin-bottom: 1%;
 }
 .fullSpan2 {
     display: block;
-    grid-column: 4 / 10;
-    background-image: url("CALLANISH SITE/SURVEY.png");
+    grid-column: 3 / 11;
+    background-image: url("CALLANISH-SITE/SURVEY.png");
     background-position: center top ;
     background-size: 100%;
     background-repeat: no-repeat;
@@ -359,13 +363,13 @@ footer ul li a:active {
     border-radius: 25px;
     border: 1px solid #FFF;
     align-self: stretch;
-    min-height: 50vh;
+    min-height: 25vh;
     margin-bottom: 7%;
 }
 .fullSpan3 {
     display: block;
-    grid-column: 5 / 9;
-    background-image: url("CALLANISH SITE/SURVEY-1.png");
+    grid-column: 3 / 11;
+    background-image: url("CALLANISH-SITE/SURVEY-1.png");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -379,8 +383,8 @@ footer ul li a:active {
 }
 .fullSpan4 {
     display: block;
-    grid-column: 4 / 10;
-    background-image: url("CALLANISH SITE/SURVEY-2.png");
+    grid-column: 3 / 11;
+    background-image: url("CALLANISH-SITE/SURVEY-2.png");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -394,8 +398,8 @@ footer ul li a:active {
 }
 .fullSpan5 {
     display: block;
-    grid-column: 4 / 10;
-    background-image: url("CALLANISH SITE/SURVEY-FILLER.png");
+    grid-column: 3 / 11;
+    background-image: url("CALLANISH-SITE/SURVEY-FILLER.png");
     background-position: center top;
     background-size: cover;
     background-repeat: no-repeat;
@@ -410,8 +414,8 @@ footer ul li a:active {
 
 .fullSpan6 {
     display: block;
-    grid-column: 4 / 10;
-    background-image: url("CALLANISH SITE/GUNSNROSES.png");
+    grid-column: 3 / 11;
+    background-image: url("CALLANISH-SITE/GUNSNROSES.png");
     background-position: center top;
     background-size: cover;
     background-repeat: no-repeat;
@@ -426,8 +430,8 @@ footer ul li a:active {
 
 .fullSpan7 {
     display: block;
-    grid-column: 4 / 10;
-    background-image: url("CALLANISH SITE/THE-CHIEFTANS.png");
+    grid-column: 3 / 11;
+    background-image: url("CALLANISH-SITE/THE-CHIEFTANS.png");
     background-position: center top;
     background-size: cover;
     background-repeat: no-repeat;
@@ -442,8 +446,8 @@ footer ul li a:active {
 
 .fullSpan8 {
     display: block;
-    grid-column: 4 / 10;
-    background-image: url("CALLANISH SITE/EVANESCENCE.png");
+    grid-column: 3 / 11;
+    background-image: url("CALLANISH-SITE/EVANESCENCE.png");
     background-position: center top;
     background-size: cover;
     background-repeat: no-repeat;
@@ -458,8 +462,8 @@ footer ul li a:active {
 
 .fullSpan9 {
     display: block;
-    grid-column: 4 / 10;
-    background-image: url("CALLANISH SITE/THE\ DECEMBERISTS.png");
+    grid-column: 3 / 11;
+    background-image: url("CALLANISH-SITE/THE\ DECEMBERISTS.png");
     background-position: center top;
     background-size: cover;
     background-repeat: no-repeat;
@@ -474,8 +478,8 @@ footer ul li a:active {
 
 .fullSpan10{
     display: block;
-    grid-column: 4 / 10;
-    background-image: url("CALLANISH SITE/JOURNEY.png");
+    grid-column: 3 / 11;
+    background-image: url("CALLANISH-SITE/JOURNEY.png");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -483,15 +487,15 @@ footer ul li a:active {
     border-radius: 25px;
     border: 1px solid #FFF;
     align-self: stretch;
-    min-height: 70vh;
+    min-height: 30vh;
     margin-bottom: 11%;
     margin-top:7%;
 }
 
 .fullSpan11 {
     display: block;
-    grid-column: 4 / 10;
-    background-image: url("CALLANISH SITE/USER\ FLOW\ WHITELINES.png");
+    grid-column: 3 / 11;
+    background-image: url("CALLANISH-SITE/USER\ FLOW\ WHITELINES.png");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -505,12 +509,12 @@ footer ul li a:active {
     display: flex;
     flex-direction: row;
     grid-column: 3 / 12;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-content: space-between;
     align-items: center;
     margin-bottom: 11%;
-    font-size: 1.5vw;
+    font-size: .7rem;
 }
 
 .tripletBox ul {
@@ -522,6 +526,10 @@ footer ul li a:active {
     list-style-position: inside;
     padding-left: 0;
     line-height: 185%;
+}
+
+.tripletBox li {
+    padding: 1% 3% 1% 4%;
 }
 
 
@@ -550,18 +558,19 @@ footer ul li a:active {
 
 .heroHeading1 {
     margin-top: 34vh;
-    font-size: 7vw;
+    font-size: 4rem;
 }
 
 .heroHeading2 {
     margin: 11% auto 7% auto;
     text-align: center;
-    font-size: 4vw;
+    justify-self: center;
+    font-size: 3rem;
 }
 .heroHeading3 {
     margin: 1% auto 2% auto;
     text-align: left;
-    font-size: 3vw;
+    font-size: 1.7rem;
     max-width:66%;
 }
 
@@ -571,7 +580,7 @@ footer ul li a:active {
 }
 
 .heroImg1 {
-    background-image: url("/CALLANISH SITE/henry-dick-2LALNs1C0No-unsplash.jpg");
+    background-image: url("/CALLANISH-SITE/henry-dick-2LALNs1C0No-unsplash.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -650,38 +659,42 @@ footer ul li a:active {
 .imgOver1 {
     grid-column: 5 / 9;
     grid-row: 1;
-    background-image: url("/CALLANISH SITE/MOBILE SITE LANDING NOW.jpg");
+    background-image: url("/CALLANISH-SITE/MOBILE SITE LANDING NOW.jpg");
     background-position: center;
-    background-size: 128%;
+    background-size: cover;
     background-repeat: no-repeat;
     box-shadow: 0 0 7px #FFF;
     border-radius: 25px;
     border: 1px solid #FFF;
     box-sizing: border-box ;
     align-self: center;
-    height:66vh;
+    justify-self: center;
+    min-height: 45vh;
+    width: 29vw;
     margin-top: 7%;
 }
+
 .imgOver2 {
     grid-column: 2/5;
-    background-image: url("/CALLANISH SITE/THANK\ YOU\ C.png");
+    background-image: url("/CALLANISH-SITE/THANK\ YOU\ C.png");
     background-position: center;
-    background-size: 128%;
+    background-size: cover;
     background-repeat: no-repeat;
     box-shadow: 0 0 7px #FFF;
     border-radius: 25px;
     border: 1px solid #FFF;
     box-sizing: border-box ;
     align-self: center;
-    height: 50vh;
-    max-width: 90%;
+    justify-self: start;
+    min-height: 33vh;
+    min-width: 29vw;
     margin-top: 7%;
 }
 .imgOver3 {
     grid-column: 9/12;
-    background-image: url("/CALLANISH SITE/WHAT\ WE\ DO.png");
+    background-image: url("/CALLANISH-SITE/WHAT\ WE\ DO.png");
     background-position: center;
-    background-size: 128%;
+    background-size: cover;
     background-repeat: no-repeat;
     box-shadow: 0 0 7px #FFF;
     border-radius: 25px;
@@ -689,8 +702,8 @@ footer ul li a:active {
     box-sizing: border-box ;
     align-self: center;
     justify-self: end;
-    height: 50vh;
-    min-width: 90%;
+    min-height: 33vh;
+    min-width: 25vw;
     margin-top: 7%;
 }
 
@@ -698,14 +711,15 @@ footer ul li a:active {
     margin: 1% auto 7% auto;
     text-align: left;
     max-width: 66%;
-    font-size: 2vw;
+    font-size: 1.6rem;
+    text-shadow: 0 0 11px rgb(255, 255, 255);
 }
 
 .points{
     position: relative;
     margin: 7% auto 7% auto;
     text-align: left !important;
-    font-size: 2vw;
+    font-size: 1rem;
     max-width: 66%;
     justify-self: start;
     align-self: start;
@@ -766,7 +780,7 @@ a {
 
 .sk1 {
     grid-column: 5 / 9;
-    background-image: url("/CALLANISH SITE/callanish-sketches/sketches-1.jpg");
+    background-image: url("/CALLANISH-SITE/callanish-sketches/sketches-1.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -776,7 +790,7 @@ a {
 
 .sk2 {
     grid-column: 2 / 7;
-    background-image: url("/CALLANISH SITE/callanish-sketches/sketches-2.jpg");
+    background-image: url("/CALLANISH-SITE/callanish-sketches/sketches-2.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -786,7 +800,7 @@ a {
 
 .sk3 {
     grid-column: 7 / 12;
-    background-image: url("/CALLANISH SITE/callanish-sketches/sketches-3.jpg");
+    background-image: url("/CALLANISH-SITE/callanish-sketches/sketches-3.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -796,7 +810,7 @@ a {
 
 .sk4 {
     grid-column: 2 / 7;
-    background-image: url("/CALLANISH SITE/callanish-sketches/sketches-3.jpg");
+    background-image: url("/CALLANISH-SITE/callanish-sketches/sketches-3.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -806,7 +820,7 @@ a {
 
 .sk5 {
     grid-column: 7 / 12;
-    background-image: url("/CALLANISH SITE/callanish-sketches/sketches-4.jpg");
+    background-image: url("/CALLANISH-SITE/callanish-sketches/sketches-4.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -816,7 +830,7 @@ a {
 
 .sk6 {
     grid-column: 2 / 7;
-    background-image: url("/CALLANISH SITE/callanish-sketches/sketches-5.jpg");
+    background-image: url("/CALLANISH-SITE/callanish-sketches/sketches-5.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -826,7 +840,7 @@ a {
 
 .sk7 {
     grid-column: 7 / 12;
-    background-image: url("/CALLANISH SITE/callanish-sketches/sketches-6.jpg");
+    background-image: url("/CALLANISH-SITE/callanish-sketches/sketches-6.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -840,7 +854,7 @@ a {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-    font-size: 3vw;
+    font-size: 2rem;
 }
 .underHeading2 {
     position: relative;
@@ -857,19 +871,19 @@ a {
     grid-column: 1 / 7;
     margin-top: 15%;
     margin-bottom: 33%;
-    font-size: 2vw;
+    font-size: 2rem;
 }
 
 
 .underHeading4 h2, h3, h4{
     position: relative;
     text-align: left;
-    font-size: 2vw;
+    font-size: 1rem;
 }
 
 .mobileWireFrame1{
     grid-column: 1/5;
-    background-image: url("/CALLANISH SITE/WHAT WE DO WIREFRAME.png");
+    background-image: url("/CALLANISH-SITE/WHAT WE DO WIREFRAME.png");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -882,7 +896,7 @@ a {
 
 .mobileWireFrame2{
     grid-column: 5/9;
-    background-image: url("/CALLANISH SITE/WHAT WE DO LO FI.png");
+    background-image: url("/CALLANISH-SITE/WHAT WE DO LO FI.png");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -894,7 +908,7 @@ a {
 
 .mobileWireFrame3{
     grid-column: 9/13;
-    background-image: url("/CALLANISH SITE/WHAT WE DO.png");
+    background-image: url("/CALLANISH-SITE/WHAT WE DO.png");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -907,7 +921,7 @@ a {
 .wireFramesIMG {
     display: block;
     grid-column: 3 / 11;
-    background-image: url("/CALLANISH SITE/wireframes-horizontal.png");
+    background-image: url("/CALLANISH-SITE/wireframes-horizontal.png");
     background-position: top;
     background-size: 110%;
     background-repeat: no-repeat;
@@ -922,7 +936,7 @@ a {
 .usabilityImg {
     display: block;
     grid-column: 5 / 9;
-    background-image: url("/CALLANISH SITE/testing grid.jpg");
+    background-image: url("/CALLANISH-SITE/testing grid.jpg");
     background-position: top;
     background-attachment:local;
     background-size: 100%;
@@ -940,7 +954,7 @@ a {
     height: 200px;
     width: 200px;
     border-radius: 50%;
-    background-image: url("/CALLANISH SITE/Siobhan-McBride.png");
+    background-image: url("/CALLANISH-SITE/Siobhan-McBride.png");
     background-position: center;
     background-size: cover;
     box-shadow: 0 0 7px #FFF;
@@ -955,7 +969,7 @@ a {
     height: 200px;
     width: 200px;
     border-radius: 50%;
-    background-image: url("/CALLANISH SITE/Jason-Byrd-not.png");
+    background-image: url("/CALLANISH-SITE/Jason-Byrd-not.png");
     background-position: center;
     background-size: cover;
     box-shadow: 0 0 7px #FFF;
