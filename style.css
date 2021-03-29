@@ -133,7 +133,7 @@ footer ul li a:active {
 }
 
 #caseStudyCircle1 {
-    background-image: url("/CALLANISH-SITE/callanish-circle-gordon-williams.jpg");
+    background-image: url("../CALLANISH-SITE/callanish-circle-gordon-williams.jpg");
     background-repeat: no-repeat;
     background-position-x: center;
     background-size: cover;
@@ -231,7 +231,7 @@ footer ul li a:active {
 
 .csd1 {
     grid-column: 1 /4;
-    background-image: url("CALLANISH-SITE/THANK-YOU-N.png");
+    background-image: url("/CALLANISH-SITE/THANK-YOU-N.png");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -281,7 +281,7 @@ footer ul li a:active {
     text-align: center;
     font-size: 5rem;
     text-transform:uppercase;
-    background-image: url("CALLANISH-SITE/callanish-case-bg-empty.png");
+    background-image: url("/CALLANISH-SITE/callanish-case-bg-empty.png");
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position-x: center;
@@ -677,12 +677,12 @@ footer ul li a:active {
 }
 
 .icon1 {
-    background-image: url("/ICONS/WHITE-SWORD.png");
+    background-image: url("../ICONS/WHITE-SWORD.png");
     grid-column: 1/6;
 }
 
 .icon2 {
-    background-image: url("/ICONS/CRYSTAL-BALL-GLOW.png");
+    background-image: url("../ICONS/CRYSTAL-BALL-GLOW.png");
     grid-column: 7/13;
 }
 
