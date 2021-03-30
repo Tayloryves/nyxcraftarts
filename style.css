@@ -10,6 +10,7 @@ body {
     background-image: url("magpies-nest.jpg");*/
     font-family: "Arimo", sans-serif;
     color: rgb(255, 255, 255);
+    height: 100vh;
 }
 
 h1, h2, h3, h4, h5, h6{
@@ -610,7 +611,7 @@ footer ul li a:active {
 }
 
 .heroImg1 {
-    background-image: url("Https://www.nyxcraftarts.com/CALLANISH-SITE/callanish-case-bg-empty.png");
+    background-image: url("/CALLANISH-SITE/callanish-case-bg-empty.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
